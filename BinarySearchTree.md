@@ -67,38 +67,67 @@ search hence the name Binary Search Tree.
   2. Compare the seraching element with root, if less than root, then recursively call
   left subtee, else recursively call right subtree
   3. If the element to serach is found anywhere, return true, else return false
- 
+
 <p align="center">
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" height="85%" width="85%" alt="Image Analysis Dataflow"/>
 </p>
+
+<h2>How to insert a key in given Binary Tree</h2>
 
 <b> Illustration to insert 2 in below tree:</b>
   
   1. Start from the root
   2. Compare the inserting element with root, if less than root, then recursively call
-  left subtee, else recursively call right subtree
+  left subtree, else recursively call right subtree
   3. After reaching the end, just insert that node at left (if less than current) or else right
  
 <p align="center">
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" height="85%" width="85%" alt="Image Analysis Dataflow"/>
 </p>
 
-<h2>Utilities Used</h2>
+<h2>How to delete a key in given Binary Tree</h2>
 
-- <b>ipgeolocation.io:</b> IP Address to Geolocation API
-
-<h2>Attacks from China coming in; Custom logs being output with geodata</h2>
-
-<p align="center">
-<img src="https://i.imgur.com/LhDCRz4.jpeg" height="85%" width="85%" alt="Image Analysis Dataflow"/>
 </p>
 
-<h2>World map of incoming attacks after 24 hours (built custom logs including geodata)</h2>
+When we delete a node, three possibilites arise:
 
-<p align="center">
-<img src="https://i.imgur.com/krRFrK5.png" height="85%" width="85%" alt="Image Analysis Dataflow"/>
+<b> 1) Node to be deleted is the leaf:</b> Simpley remove from the tree
+
+             50                             50
+           /     \         delete(20)      /   \
+          30      70       --------->    30     70 
+         /  \    /  \                     \    /  \ 
+       20   40  60   80                   40  60   80
+
+<b> 2) Node to be deleted has only one child:</b> Copy the child to the node and delete the child
+
+             50                             50
+           /     \         delete(30)      /   \
+          30      70       --------->    40     70 
+            \    /  \                          /  \ 
+            40  60   80                       60   80
+
+<b> Node to be deleted has two children:</b> Find inorder successor of the node. Copy contents of the inorder successor to the node and delete the inorder successor. Note that inorder predecessor can also be used
+
+             50                             60
+           /     \         delete(50)      /   \
+          40      70       --------->    40    70 
+                 /  \                            \ 
+                60   80                           80
+
+The important thing to note, inorder successor is needed only when the right child is not empty. In this particular case, inorder successor can be obtained by finding the minimum value in the right child of the node
+
+<h2>Time Complexity</h2>
+
 </p>
 
+<b>Time Complexity of Search and Insert:</b>
+
+The worst case time complexity of serach and insert operations is O(h) where h is the height of the Binary Search Tree. In the worst case, we may have to travel from root to the deepest leaf node. The height of a skewed tree may become n and the time complexity of search and insert oepration may become O(n)
+
+<b>Time Complexity of Delete:</b>
+
+The worst case time complexity of delete operation is O(h) where h is the height of the Binary Search Tree. In worst case, we may have to travel from the root to the deepest leaf node. The height of a skewed tree may become n and the time complexity of delete operation may become O(n)
 
 <!--
  ```diff

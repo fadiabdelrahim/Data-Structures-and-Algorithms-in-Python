@@ -1,8 +1,5 @@
 <h1>Binary Search Tree</h1>
 
-
-
-
 <h2>Description</h2>
 <b>A Binary Search Tree is a node-based binary tree data structure which has the following properties:
 </b>
@@ -15,7 +12,7 @@
 - There must be no duplicate nodes
 
 <p align="center">
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTsearch.png" height="85%" width="85%" alt=""/>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" height="85%" width="85%" alt="BSTsearch"/>
 </p>
 
 The above properties of Binary Serach Tree provides an ordering among keys so that 

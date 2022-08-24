@@ -12,7 +12,7 @@
 - There must be no duplicate nodes
 
 <p align="center">
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" height="85%" width="85%" alt="BSTsearch"/>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" height="50%" width="50%" alt="BSTsearch"/>
 </p>
 
 The above properties of Binary Serach Tree provides an ordering among keys so that 
@@ -66,7 +66,7 @@ search hence the name Binary Search Tree.
   3. If the element to serach is found anywhere, return true, else return false
 
 <p align="center">
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" height="85%" width="85%" alt="BSTsearch"/>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" height="50%" width="50%" alt="BSTsearch"/>
 </p>
 
 <h2>How to insert a key in given Binary Tree</h2>
@@ -79,7 +79,7 @@ search hence the name Binary Search Tree.
   3. After reaching the end, just insert that node at left (if less than current) or else right
  
 <p align="center">
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" height="85%" width="85%" alt="BSTinsert"/>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" height="50%" width="50%" alt="BSTinsert"/>
 </p>
 
 <h2>How to delete a key in given Binary Tree</h2>
